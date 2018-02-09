@@ -1,0 +1,57 @@
+.header{
+  width: ;
+  margin: 40px auto ;
+  text-align: ;
+  color: ;
+  background: ;
+  border: ;
+  border-radius: ;
+}
+
+form{
+  width: ;
+  margin: ;
+  border-radius: ;
+  padding: ;
+  background: :
+  border: ;
+}
+
+.taskbox{
+  width: :
+  height: ;
+  padding: :
+  border: ;
+}
+
+.addbtn{
+  height: ;
+  background: ;
+  color: ;
+  border: ;
+  border-radius: ;
+  padding: ;
+
+}
+
+table{
+  width:50% ;
+  margin:40px auto ;
+  border-collapse: collapse;
+}
+
+tr{
+  border-bottom: 2px solid black;
+}
+
+th{
+
+}
+
+ th, td{
+
+ }
+
+tr:hover {
+
+}
