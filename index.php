@@ -1,3 +1,22 @@
+<?php
+  $errors = "";
+
+  $db = mysqli_connect('localhost','root','','todolist');
+  if (isset($_POST['submit'])){
+    $task = $_POST['task'];
+      if (empty($task)){
+        $errors = "Write your task/s";
+      }else{
+        mysqli_query($db,"INSERT INTO tasks (task) VALUES ('$task')");
+        header('location: index.php');
+      }
+    }
+    if (isset($_GET['del_task'])){
+        $id = $_GET['del_task'];
+        mysqli_query($db, "DELETE FROM tasks WHERE id=$id");
+    }
+    $tasks = mysqli_query($db, "SELECT * FROM tasks");
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,6 +29,9 @@
     </div>
 
     <form method="POST" action="index.php">
+      <?php if(isset($errors)){ ?>
+        <p> <?php echo $errors;  ?> <p>
+      <?php  } ?>
       <input type="text" name="task" class="taskbox">
       <button type="submit" class="addbtn" name="submit"> Add Task</button>
     </form>
@@ -24,13 +46,15 @@
         <thead>
 
         <tbody>
+          <?php $i =1;   while ($row = mysqli_fetch_array($tasks)) { ?>
             <tr>
-              <td>1</td>
-              <td class="taskholder">First Task</td>
+              <td><?php echo $i; ?></td>
+              <td class="taskholder"><?php echo $row['task']; ?></td>
               <td class="delete">
-                <a href="#">Delete</a>
+                <a href='index.php?del_task=<?php echo $row['id']; ?>'>Delete</a>
               </td>
-            <tr>
+            </tr>
+          <?php $i++; } ?>
         <tbody>
     </table>
 </body>
