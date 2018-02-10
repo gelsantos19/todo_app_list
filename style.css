@@ -1,3 +1,7 @@
+html{
+  background-color: #00B4FF;
+}
+
 .header{
   width: 50%;
   margin: 30px auto ;
@@ -8,23 +12,23 @@
 form{
   width: 50% ;
   margin: 40px auto;
-  border-radius: ;
   padding: 10px ;
 
 }
 
 .taskbox{
-  width:73% :
-  padding: 10px:
+  width:100% ;
+  padding: 12px 20px;
 }
 
 .addbtn{
-  padding:5px 20px ;
-
+  width:100% ;
+  padding: 5px;
+  margin: 20px 20px;
 }
 
 table{
-  width:50% ;
+  width:100% ;
   margin:40px auto ;
   border-collapse: collapse;
 }
@@ -36,6 +40,6 @@ tr{
  th, td{
    border: none;
    height: 30px;
-   padding: 50px;
+   padding: 10px;
    text-align: center;
  }
