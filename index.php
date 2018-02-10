@@ -26,14 +26,14 @@
 <body>
     <div class="header">
       <h2>To Do List App</h2>
-      <h5>Write the task/s that you need to do</h5>
+      <h4>Write the task/s that you need to do</h4>
     </div>
 
     <form method="POST" action="index.php">
       <?php if(isset($errors)){ ?>
         <p> <?php echo $errors;  ?> <p>
       <?php  } ?>
-      <input type="text" name="task" class="taskbox"><br><br>
+      <input type="text" name="task" class="taskbox"><br>
       <button type="submit" class="addbtn" name="submit"> Add Task</button>
     </form>
 
