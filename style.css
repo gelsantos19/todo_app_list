@@ -1,9 +1,7 @@
 .header{
   width: 50%;
-  margin: 40px auto ;
+  margin: 30px auto ;
   text-align: center;
-  color: ;
-  background: ;
   border-radius: 20px;
 }
 
@@ -12,25 +10,16 @@ form{
   margin: 40px auto;
   border-radius: ;
   padding: 10px ;
-  background: :
-  border: ;
-  align-content: center;
+
 }
 
 .taskbox{
-  width: :
-  height: ;
-  padding: :
-  border: ;
+  width:73% :
+  padding: 10px:
 }
 
 .addbtn{
-  height: ;
-  background: ;
-  color: ;
-  border: ;
-  border-radius: ;
-  padding: ;
+  padding:5px 20px ;
 
 }
 
@@ -44,16 +33,9 @@ tr{
   border-bottom: 2px solid black;
 }
 
-th{
-
-}
-
  th, td{
    border: none;
    height: 30px;
-   padding: 5px;
+   padding: 50px;
+   text-align: center;
  }
-
-tr:hover {
-
-}
