@@ -1,0 +1,6 @@
+1. make a database named 'todolist'.
+2. create a table named 'tasks'.
+3. set the table column into 2.
+4. name the first box 'id' and set the length/value into 11 and check the auto increment.
+5. name the second box 'task' and set the type into varchar and the lenght/values to 255.
+6. save it.
